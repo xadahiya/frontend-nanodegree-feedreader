@@ -1,7 +1,6 @@
 ## Feed Reader Testing project
 
-Sixth project from the Front-End Web Developer Nanodegree in <a href="https://www.udacity.com" target="_blank">Udacity</a>:
-<br>
+Sixth project from the Front-End Web Developer Nanodegree at [Udacity](http://udacity.com)
 wrote a number of tests against a pre-existing application with Jasmine, to test the underlying business logic of the application as well as the event handling and DOM manipulation.
 
 ### To run the application

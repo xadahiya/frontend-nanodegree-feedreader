@@ -23,7 +23,6 @@ var allFeeds = [
     }
 ];
 
-var contentchanged = false;
 /* This function starts up our application. The Google Feed
  * Reader API is loaded asynchonously and will then call this
  * function when the API is loaded.
@@ -70,13 +69,6 @@ function init() {
                      container.append(entryTemplate(entry));
                  });
 
-                 //binds a custom event to container
-                 container.trigger('contentchanged'); // this will call the function above
-                 //sets content changed to true on content change
-                 container.bind('contentchanged', function() {
-                    // do something after the div content has changed
-                    contentchanged = true;
-                });
                  if (cb) {
                      cb();
                  }
@@ -86,8 +78,6 @@ function init() {
                  if (cb) {
                      cb();
                  }
-                 //sets contentchanged to false in case of error
-                 contentchanged = false;
                },
        dataType: "json"
      });
